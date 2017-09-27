@@ -3,9 +3,7 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 
-#include "graphics_lib.h"
-#include "globals.h"
-
+#include "globals_lib.h"
 
 void changeSize(){
 
@@ -18,4 +16,5 @@ void changeSize(){
 	glLoadIdentity();
 	gluLookAt(10, -10, 10, 0,0,0,0,0,1);
 }
+
 

@@ -1,20 +1,31 @@
 #ifndef GRAPHICS_LIB_H
 #define GRAPHICS_LIB_H
 
-//Gets the coordinates to draw a segment by two clicks from the user.
-void mouseFunc(int button, int state, int x, int y);
+using namespace std;
 
-//Arrumar uma descrição boa da apostila
+//In this library we declarate all Graphic functions used in this aplication.
+
+
 void changeSize();
 
-//Responsible for drawing the lines in the screen as soon as mouseFunc gives the coordinates.
-void displayLines();
+//Draw the lines and intersections on the screen.
+/** @file */
+void renderScene();
 
-
-//Arrumar uma definição boa na apostila
+//Reshapes the window.
+/** @file */
 void reshape(int w, int h);
 
-//This function is called to initialize the window and paint it white. Also responsable for clearing the screen if needed.
-void init(void);
+//Get the mouse clicks.
+/** @file */
+void mouseFunc(int button, int state, int x, int y);
+
+//Used to give motion to the mouse.
+/** @file */
+void mouseDrag(int x, int y);
+
+//Initializes the window, paint it white and set buffers.
+/** @file */
+void init();
 
 #endif
